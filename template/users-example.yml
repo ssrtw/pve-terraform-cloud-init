@@ -1,0 +1,5 @@
+name: foobar
+groups:
+    - sudo
+shell: /bin/bash
+sudo: ALL=(ALL)

@@ -1,0 +1,17 @@
+endpoint: https://<ip>:8006/
+api_token: terraform-prov@pve!terraform-token=<token>
+ssh_private_key_path: ~/.ssh/id_rsa
+
+data_store_id: "local"
+snippet_store_id: "snippets"
+vm_disk_id: "local-lvm"
+
+nodename: pve
+hostname: ci-ubuntu
+username: foobar
+runcmds: ["example"]
+
+ubuntu_cloud_init_img_url: https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.img
+
+address: 192.168.0.2/24
+gateway: 192.168.0.1

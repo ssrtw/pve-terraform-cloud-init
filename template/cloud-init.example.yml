@@ -1,0 +1,19 @@
+#cloud-config
+hostname: ${hostname}
+
+locale: en_US.UTF-8
+timezone: Asia/Taipei
+
+package_update: true
+package_upgrade: true
+packages:
+    - qemu-guest-agent
+    - curl
+
+ssh_pwauth: false
+
+users: [default]
+
+runcmd:
+    - systemctl enable qemu-guest-agent
+    - systemctl start qemu-guest-agent
