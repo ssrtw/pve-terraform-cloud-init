@@ -1,6 +1,8 @@
 resource "proxmox_virtual_environment_vm" "ubuntu_vm" {
   node_name = local.config.nodename
 
+  scsi_hardware = "virtio-scsi-single"
+
   # should be true if qemu agent is not installed / enabled on the VM
   stop_on_destroy = true
 
